@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>PEye</RootNamespace>
+    <AssemblyName>PEye</AssemblyName>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <Version>1.0.0</Version>
+    <Authors>Ehabal7ab</Authors>
+    <Company>PEye</Company>
+    <Product>PEye</Product>
+    <Description>Root managed C# project for PEye (migrated from native)</Description>
+    <RepositoryUrl>https://github.com/CyberX-sec/PEye</RepositoryUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\src\CLI\Program.cs" Link="CLI\Program.cs" />
+    <Compile Include="..\src\Core\*.cs" Link="Core\%(Filename)%(Extension)" />
+    <Compile Include="..\src\Utils\*.cs" Link="Utils\%(Filename)%(Extension)" />
+  </ItemGroup>
+
+</Project>
